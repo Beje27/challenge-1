@@ -1,15 +1,10 @@
-
+body {
+    overflow-x: hidden;
+}
 #header {
     height: 90px;
     width: 100%;
     background-color: aqua
-}
-
-#header .blue {
-    background-color: #091B6F;
-    border-radius: 5px;
-    height: 34px;
-    width: 100px;
 }
 
 #header .header-right {
@@ -40,40 +35,71 @@
     background-color: #72e276;
 }
 
+#hero h2, p{
+    margin-left: 20px;
+    
+}
 .container-header {
-    padding-left: 50px;
     background-color: aqua
     
 }
 
 .container-header button {
+    margin-left: 20px;
     background-color: #5CB85F;
 }
 
-#isi {
-    padding: 30px;
-}
+
 .img-car{
-width: 70%;
+width: 100%;
 height: auto;
 }
 
 .img-cewe{
     width: 400px;
-    height: auto;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .img-cewe{
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .img-car{
         width: 100%;
         height: auto;
     }
 
-}
+
+    #isi .fw-bold {
+        font-size: 2em ;
+        padding-top: 30px;
+        margin-left: 20px;
+        
+    }
+
+    #isi .pad-isi p{
+        font-size: 1em;
+        text-align: justify;
+    }
+    
+    #why-us .container h2{
+        padding-top: 20px;
+        font-size: 2em;
+        
+    }
+
+    #why-us .container h5{
+        font-size: 1em;
+    }
+    
+ }
 
 
 #why-us h2 {
     font-size: 28px;
+    padding-left: 20px;
 }
 
 #why-us .card-pro {
@@ -98,9 +124,9 @@ height: auto;
 
 
 .container-iklan{
-    margin: 100px 100px;
     padding-bottom: 30px;
-    margin: 100px 100px 100px 100px;
+    margin-left: 40px;
+    margin-right: 40px;
     color: white;
     background-color: blue;
 }
@@ -112,7 +138,6 @@ height: auto;
 .container-iklan hover {
     background-color: #5CB85F;
 }
-
 .container-iklan h3{
     padding: 20px 0;
 }
@@ -120,11 +145,12 @@ height: auto;
 .container-faq {
     padding-left: 100px;
 }
-
-#faq .container {
-    padding: 50px 0;
+#faq .container h2{
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 2em;
 }
-
+    
 #faq .accordion-item {
     margin: 20px 0;
 }
@@ -139,16 +165,22 @@ height: auto;
 
 #testimonial .carousel-item {
     padding: 5px 0;
+    align-items: center;
+    justify-content: center;
 }
 
 #testimonial .card-testi {
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 15px 15px 15px 15px;
     height: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 #testimonial .card-content {
     padding: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 #testimonial img {
@@ -166,18 +198,6 @@ height: auto;
     width: 100px;
 }
 
-@media (max-width: 576px) {
-    #faq .pad-faq1 {
-        padding: 0 50px;
-    }
-
-    #faq .pad-faq2 {
-        padding: 0 50px;
-    }
-
-    #isi .pad-isi {
-        padding: 50px 0;
-    }
-
+::-webkit-scrollbar {
+    display: none;
 }
-
