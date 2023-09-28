@@ -1,38 +1,15 @@
 body {
     overflow-x: hidden;
 }
-#header {
-    height: 90px;
-    width: 100%;
+
+.blue {
+    background-color: blueviolet;
+    height: 2rem;
+    width: 6.25rem;
+}
+
+#navbar .container-navbar {
     background-color: aqua
-}
-
-#header .header-right {
-    float: right;
-    padding-top: 28px;
-}
-
-#header .header-right a {
-    padding: 25px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    
-}
-
-#header .header-right a:hover {
-    color: #3C3C3C;
-}
-
-#header span {
-    background-color: #5CB85F;
-    padding: 7px 14px;
-    border-radius: 3px;
-    color: white;
-}
-
-#header span:hover {
-    background-color: #72e276;
 }
 
 #hero h2, p{
@@ -59,43 +36,9 @@ height: auto;
     width: 400px;
 }
 
-@media screen and (max-width: 600px) {
-    .img-cewe{
-        width: 100%;
-        height: auto;
-        padding-top: 50px;
-    }
-
-    .img-car{
-        width: 100%;
-        height: auto;
-    }
-
-
-    #isi .fw-bold {
-        font-size: 2em ;
-        padding-top: 30px;
-        margin-left: 20px;
-        
-    }
-
-    #isi .pad-isi p{
-        font-size: 1em;
-        text-align: justify;
-    }
-    
-    #why-us .container h2{
-        padding-top: 20px;
-        font-size: 2em;
-        
-    }
-
-    #why-us .container h5{
-        font-size: 1em;
-    }
-    
- }
-
+#isi .fw-bold {
+    margin-left: 20px;
+}
 
 #why-us h2 {
     font-size: 28px;
@@ -201,3 +144,40 @@ height: auto;
 ::-webkit-scrollbar {
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    .img-cewe{
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .img-car{
+        width: 100%;
+        height: auto;
+    }
+
+
+    #isi .fw-bold {
+        font-size: 2em ;
+        padding-top: 30px;
+        margin-left: 20px;
+        
+    }
+
+    #isi .pad-isi p{
+        font-size: 1em;
+        text-align: justify;
+    }
+    
+    #why-us .container h2{
+        padding-top: 20px;
+        font-size: 2em;
+        
+    }
+
+    #why-us .container h5{
+        font-size: 1em;
+    }
+    
+ }
