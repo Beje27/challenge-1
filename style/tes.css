@@ -12,7 +12,7 @@ body {
     background-color: aqua
 }
 
-#hero h2, p{
+#hero h2{
     margin-left: 20px;
     
 }
@@ -33,7 +33,7 @@ height: auto;
 }
 
 .img-cewe{
-    width: 400px;
+    width: 100%;
 }
 
 #isi .fw-bold {
@@ -146,9 +146,16 @@ height: auto;
 }
 
 @media screen and (max-width: 768px) {
+    #hero p{
+        font-size: 1.5em;
+    }
+
+    #hero h2 {
+        font-size: 4em;
+    }
+
     .img-cewe{
-        width: 100%;
-        height: auto;
+        width: 300px;
         padding-top: 50px;
     }
 
@@ -158,26 +165,24 @@ height: auto;
     }
 
 
-    #isi .fw-bold {
-        font-size: 2em ;
-        padding-top: 30px;
-        margin-left: 20px;
+    #isi h2{
+        font-size: 3.5rem ;
+        
         
     }
 
-    #isi .pad-isi p{
-        font-size: 1em;
+    #isi p{
+        font-size: 1.5em;
         text-align: justify;
     }
-    
-    #why-us .container h2{
-        padding-top: 20px;
-        font-size: 2em;
-        
+
+    #why-us .container h2 {
+        font-size: 3em;
+        padding-top: 10px;
     }
 
-    #why-us .container h5{
-        font-size: 1em;
+    #why-us .container p {
+        padding-left: 20px;
     }
     
- }
+}
